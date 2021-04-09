@@ -12,9 +12,16 @@ struct ContentView: View {
     @State
     private var isActivated: Bool = false
     
+    static let dateFormat: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY.MM.dd"
+        return dateFormatter
+    }()
+    
     var body: some View {
         NavigationView {
             VStack {
+                Text("Today: \(Date(), formatter: ContentView.dateFormat)")
                 HStack {
                     MyVStackView(1,2,3,Color.red,$isActivated)
                     MyVStackView(4,5,6,Color.red,$isActivated)
