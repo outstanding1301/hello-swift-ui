@@ -11,11 +11,19 @@ struct MyVStackView: View {
     var v1: Int
     var v2: Int
     var v3: Int
-    init(_ v1: Int, _ v2: Int, _ v3: Int) {
+    var color: Color
+    
+    @Binding
+    var isActivated: Bool
+    
+    init(_ v1: Int, _ v2: Int, _ v3: Int, _ color: Color, _ isActivated: Binding<Bool> = .constant(true)) {
         self.v1 = v1
         self.v2 = v2
         self.v3 = v3
+        self.color = color
+        _isActivated = isActivated
     }
+    
     var body: some View {
         VStack {
             Text("\(v1)!")
@@ -28,13 +36,13 @@ struct MyVStackView: View {
                 .fontWeight(.bold)
                 .font(.system(size: 60))
         }
-        .background(Color.red)
+        .background(isActivated ? color : Color.gray)
         .padding(1)
     }
 }
 
 struct MyVStackView_Previews: PreviewProvider {
     static var previews: some View {
-        MyVStackView(1, 2, 3)
+        MyVStackView(1, 2, 3, Color.red)
     }
 }
