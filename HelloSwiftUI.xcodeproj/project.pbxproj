@@ -13,6 +13,7 @@
 		42DE6E1E2620073A00D80575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DE6E1D2620073A00D80575 /* Preview Assets.xcassets */; };
 		42DE6E292620073A00D80575 /* HelloSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE6E282620073A00D80575 /* HelloSwiftUITests.swift */; };
 		42DE6E342620073A00D80575 /* HelloSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE6E332620073A00D80575 /* HelloSwiftUIUITests.swift */; };
+		42DE6E4526200A7200D80575 /* MyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE6E4426200A7200D80575 /* MyVStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		42DE6E2F2620073A00D80575 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DE6E332620073A00D80575 /* HelloSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftUIUITests.swift; sourceTree = "<group>"; };
 		42DE6E352620073A00D80575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DE6E4426200A7200D80575 /* MyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				42DE6E1A2620073A00D80575 /* Assets.xcassets */,
 				42DE6E1F2620073A00D80575 /* Info.plist */,
 				42DE6E1C2620073A00D80575 /* Preview Content */,
+				42DE6E4426200A7200D80575 /* MyVStackView.swift */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				42DE6E192620073800D80575 /* ContentView.swift in Sources */,
 				42DE6E172620073800D80575 /* HelloSwiftUIApp.swift in Sources */,
+				42DE6E4526200A7200D80575 /* MyVStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
