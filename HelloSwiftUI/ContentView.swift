@@ -21,13 +21,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                NavigationLink(destination: MyWebView(urlToLoad: "https://outstanding1301.github.io")
+                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)) {
+                    CircleImageView()
+                }
                 Text("Today: \(Date(), formatter: ContentView.dateFormat)")
                 HStack {
                     MyVStackView(1,2,3,Color.red,$isActivated)
                     MyVStackView(4,5,6,Color.red,$isActivated)
                     MyVStackView(7,8,9,Color.red,$isActivated)
                 }
-                .padding(isActivated ? 30 : 10)
+                .padding(isActivated ? 20 : 10)
                 .background(isActivated ? Color.yellow : Color.black)
                 .onTapGesture {
                     print("HStack clicked!")
